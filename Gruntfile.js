@@ -4,6 +4,6 @@ module.exports = function (grunt) {
 
     require('load-grunt-config')(grunt);
 
-    grunt.registerTask('compile', ['sass', 'copy:cssImages']);
-    grunt.registerTask('default', ['bower', 'jslint', 'compile', 'karma']);
+    grunt.registerTask('compile', ['sass']);
+    grunt.registerTask('default', ['bower', 'compile']);
 };
