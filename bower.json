@@ -1,0 +1,26 @@
+{
+    "name": "travi-framework-sample",
+    "dependencies": {
+        "jquery-requestAnimationFrame": "0.1.x",
+        "travi-core": "latest",
+        "travi-slide-nav": "latest"
+    },
+    "devDependencies": {
+        "travi-test-utils": "latest"
+    },
+    "exportsOverride": {
+        "amplify": {
+            ".": "core/amplify.core.js"
+        },
+        "jquery-requestAnimationFrame": {
+            ".": "src/jquery.requestAnimationFrame.js"
+        },
+        "travi-core": {
+            "js": "js/",
+            "templates": "templates/"
+        },
+        "jsrender": {
+            ".": "*.js"
+        }
+    }
+}

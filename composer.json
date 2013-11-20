@@ -1,0 +1,27 @@
+{
+    "name": "Travi/framework-sample",
+    "description": "Example implementation of a site that uses the framework",
+    "authors": [
+        {
+            "name": "Matt Travi",
+            "email": "programmer@travi.org",
+            "homepage": "http://travi.org"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://bitbucket.org/travi/framework"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "process-timeout": 500
+    },
+    "require": {
+        "Travi/framework": "default"
+    },
+    "require-dev": {
+        "behat/behat": "2.4.5"
+    }
+}

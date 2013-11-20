@@ -1,0 +1,14 @@
+{
+    "name": "travi.org",
+    "version": "0.1.0",
+    "devDependencies": {
+        "bower": "~0.10.0",
+        "grunt": "~0.4.1",
+        "grunt-jslint": "~1.0.0",
+        "grunt-contrib-sass": "~0.3.0",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-copy": "~0.4.0",
+        "grunt-bower-task": "~0.3.1",
+        "load-grunt-config": "~0.6.1"
+    }
+}

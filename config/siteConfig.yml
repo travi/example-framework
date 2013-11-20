@@ -1,0 +1,17 @@
+productionUrl: framework-example.travi.org
+
+smarty:
+  siteTemplateDir: app/view
+  smartyCompileDir: /home/travi/sandbox/templates_c
+
+template:
+  layout: layout.tpl
+
+siteName: Travi Framework Example
+tagLine: Example Implementation of the Travi Framework
+
+theme:
+  site: example-theme.css
+
+#googleAnalytics:
+#  key: UA-2890413-5

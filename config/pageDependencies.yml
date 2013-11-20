@@ -1,0 +1,9 @@
+site:
+  css:
+    - /resources/shared/css/travi-baseline.css
+  js:
+    - framework
+  small:
+    js:
+      - animationFrame
+      - /resources/thirdparty/travi-slide-nav/jquery.slideNav.js
