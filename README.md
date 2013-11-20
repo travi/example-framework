@@ -1,4 +1,4 @@
-# Travi Framework Sample Implementation
+# Sample Implementation of the Travi Framework
 
 ## Getting Started
 ### Install dependencies
