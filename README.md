@@ -26,4 +26,8 @@
 * Install the Vagrant hosts updater plugin (<https://github.com/cogitatio/vagrant-hostsupdater>)
     * `vagrant plugin install vagrant-hostsupdater`
 * `vagrant up`
+* The script updates your hosts file automatically using sudo, so you will need to provide your password to enable this.
+
+### Load the example in your browser
+* Enter http://travi-framework-sample.dev/ in the address bar of your browser
 
