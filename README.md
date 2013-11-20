@@ -1,5 +1,8 @@
 # Sample Implementation of the Travi Framework
 
+THis project is simply an implementation of the [framework] (https://bitbucket.org/travi/framework). A
+[Vagrant] (http://vagrantup.com) VM definition is also included to make it simple to see it in action.
+
 ## Getting Started
 ### Install dependencies
 #### composer
@@ -21,7 +24,7 @@
     * `npm install`
     * `grunt sass`
 
-### Set up the development environment
+### Set up the server instance
 * Ensure Vagrant and VirtualBox are installed
 * Install the Vagrant hosts updater plugin (<https://github.com/cogitatio/vagrant-hostsupdater>)
     * `vagrant plugin install vagrant-hostsupdater`
