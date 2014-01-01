@@ -9,11 +9,13 @@ This project is simply an implementation of the [framework] (https://bitbucket.o
 #### composer
 * Download from <http://getcomposer.org/download/>
 * `php <path to>/composer.phar install`
+
 #### npm
 * `brew install node`
 * `npm install -g bower`
 * `npm install -g grunt-cli`
 * `npm install`
+
 #### bower
 * `grunt bower`
 
