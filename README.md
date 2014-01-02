@@ -22,11 +22,6 @@ This project is simply an implementation of the [framework] (https://bitbucket.o
 ### Compile Styles
 * `grunt compile`
 
-* Temporarily, there is a need to compile the framework styles
-    * `cd vendor\Travi\framework\`
-    * `npm install`
-    * `grunt sass`
-
 ### Set up the server instance
 * Ensure Vagrant and VirtualBox are installed
 * Install the Vagrant hosts updater plugin (<https://github.com/cogitatio/vagrant-hostsupdater>)
