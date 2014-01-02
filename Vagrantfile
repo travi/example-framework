@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
   config.vm.box = "precise32"
 
-  config.vm.network "private_network", ip: "192.168.8.200"
+  config.vm.network "private_network", ip: "192.168.8.222"
   config.vm.hostname = "travi-framework-sample.dev"
   config.hostsupdater.remove_on_suspend = true
 

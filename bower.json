@@ -1,8 +1,7 @@
 {
     "name": "travi-framework-sample",
     "dependencies": {
-        "travi-core": "latest",
-        "travi-slide-nav": "latest"
+        "travi-framework": "latest"
     },
     "devDependencies": {
         "travi-test-utils": "latest"
