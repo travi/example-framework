@@ -3,56 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "76baf9cd8b8451cb7a559d7be99ddb1a",
+    "hash": "4ae969594874482013d13f6cada1618f",
     "packages": [
-        {
-            "name": "Travi/framework",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/travi/php-framework.git",
-                "reference": "8519d5aee04464e673dec9530228f9691a73546a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/8519d5aee04464e673dec9530228f9691a73546a",
-                "reference": "8519d5aee04464e673dec9530228f9691a73546a",
-                "shasum": ""
-            },
-            "require": {
-                "fp/lightopenid": "dev-master",
-                "html2text/html2text": "dev-master",
-                "lespoilus/spyc": "dev-master",
-                "smarty/smarty": "3.1.*@stable"
-            },
-            "require-dev": {
-                "behat/behat": "2.4.5",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Pd": "php/thirdparty/PHP-Dependency/library/",
-                    "Travi\\framework": [
-                        "php/framework/objects",
-                        "php/framework/src"
-                    ]
-                }
-            },
-            "authors": [
-                {
-                    "name": "Matt Travi",
-                    "email": "programmer@travi.org",
-                    "homepage": "http://travi.org"
-                }
-            ],
-            "description": "web framework",
-            "support": {
-                "source": "https://github.com/travi/php-framework/tree/master",
-                "issues": "https://github.com/travi/php-framework/issues"
-            },
-            "time": "2014-01-03 03:17:27"
-        },
         {
             "name": "fp/lightopenid",
             "version": "dev-master",
@@ -209,6 +161,51 @@
                 "templating"
             ],
             "time": "2013-12-17 16:56:58"
+        },
+        {
+            "name": "travi/framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/travi/php-framework.git",
+                "reference": "1c7da8cdb0f1498f4ba0fa64b0e2336578585175"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/1c7da8cdb0f1498f4ba0fa64b0e2336578585175",
+                "reference": "1c7da8cdb0f1498f4ba0fa64b0e2336578585175",
+                "shasum": ""
+            },
+            "require": {
+                "fp/lightopenid": "dev-master",
+                "html2text/html2text": "dev-master",
+                "lespoilus/spyc": "dev-master",
+                "smarty/smarty": "3.1.*@stable"
+            },
+            "require-dev": {
+                "behat/behat": "2.4.5",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pd": "php/thirdparty/PHP-Dependency/library/",
+                    "travi\\framework": [
+                        "php/framework/objects",
+                        "php/framework/src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Matt Travi",
+                    "email": "programmer@travi.org",
+                    "homepage": "http://travi.org"
+                }
+            ],
+            "description": "web framework",
+            "time": "2014-01-03 20:31:14"
         }
     ],
     "packages-dev": [

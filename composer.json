@@ -1,5 +1,5 @@
 {
-    "name": "Travi/framework-sample",
+    "name": "travi/framework-sample",
     "description": "Example implementation of a site that uses the framework",
     "authors": [
         {
@@ -8,18 +8,12 @@
             "homepage": "http://travi.org"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "http://github.com/travi/php-framework.git"
-        }
-    ],
     "minimum-stability": "dev",
     "config": {
         "process-timeout": 1000
     },
     "require": {
-        "Travi/framework": "default"
+        "travi/framework": "*"
     },
     "require-dev": {
         "behat/behat": "2.4.5"

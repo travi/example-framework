@@ -12,7 +12,7 @@ apache::vhost { 'travi-framework-sample.dev':
   port    => '80',
   docroot => '/vagrant/doc_root',
   directories => [{ path => '/vagrant/doc_root', allow_override => 'All'}],
-  aliases => [{alias => '/resources/shared', path => '/vagrant/vendor/Travi/framework/client'}],
+  aliases => [{alias => '/resources/shared', path => '/vagrant/vendor/travi/framework/client'}],
 }
 
 file { ['/home/travi/', '/home/travi/sandbox/', '/home/travi/sandbox/templates_c/']:
