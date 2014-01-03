@@ -11,12 +11,12 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://bitbucket.org/travi/framework"
+            "url": "http://github.com/travi/php-framework.git"
         }
     ],
     "minimum-stability": "dev",
     "config": {
-        "process-timeout": 500
+        "process-timeout": 1000
     },
     "require": {
         "Travi/framework": "default"

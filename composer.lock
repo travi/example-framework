@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "639cd349b044ccb9e4785d48ff35390b",
+    "hash": "76baf9cd8b8451cb7a559d7be99ddb1a",
     "packages": [
         {
             "name": "Travi/framework",
-            "version": "dev-default",
+            "version": "dev-master",
             "source": {
-                "type": "hg",
-                "url": "https://bitbucket.org/travi/framework",
-                "reference": "16f1023fe70e76628d4c3d6b28233311af178c64"
+                "type": "git",
+                "url": "https://github.com/travi/php-framework.git",
+                "reference": "8519d5aee04464e673dec9530228f9691a73546a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/travi/framework/get/16f1023fe70e76628d4c3d6b28233311af178c64.zip",
-                "reference": "16f1023fe70e76628d4c3d6b28233311af178c64",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/8519d5aee04464e673dec9530228f9691a73546a",
+                "reference": "8519d5aee04464e673dec9530228f9691a73546a",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,11 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-01-01 05:32:25"
+            "support": {
+                "source": "https://github.com/travi/php-framework/tree/master",
+                "issues": "https://github.com/travi/php-framework/issues"
+            },
+            "time": "2014-01-03 03:17:27"
         },
         {
             "name": "fp/lightopenid",
