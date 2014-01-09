@@ -17,6 +17,9 @@
             "js": "js/",
             "templates": "templates/"
         },
+        "wymeditor": {
+            ".": "dist/wymeditor"
+        },
         "jsrender": {
             ".": "*.js"
         }

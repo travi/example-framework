@@ -4,8 +4,8 @@ use travi\framework\controller\AbstractController,
     travi\framework\http\Request,
     travi\framework\http\Response;
 
-class Home extends AbstractController {
-
+class Home extends AbstractController
+{
     /**
      * @param $request Request
      * @param $response Response

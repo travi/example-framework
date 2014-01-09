@@ -5,5 +5,6 @@ module.exports = function (grunt) {
     require('load-grunt-config')(grunt);
 
     grunt.registerTask('compile', ['sass']);
-    grunt.registerTask('default', ['bower', 'compile']);
+    grunt.registerTask('build', ['bower', 'compile']);
+    grunt.registerTask('default', 'build');
 };
