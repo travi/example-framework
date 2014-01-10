@@ -37,6 +37,16 @@ class Components extends AbstractController
      * @param $response Response
      * @return void
      */
+    public function icons(&$request, &$response)
+    {
+
+    }
+
+    /**
+     * @param $request Request
+     * @param $response Response
+     * @return void
+     */
     public function forms(&$request, &$response)
     {
         $form = new Form();
