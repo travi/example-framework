@@ -6,6 +6,19 @@ nav#primaryNav {
   }
 }
 
+footer dl {
+  display: inline;
+
+  dt, dd {
+    display: inline;
+  }
+
+  dt {
+    font-weight: normal;
+    font-size: 1em;
+  }
+}
+
 li#basicVersion {
   display:            none;
 }
