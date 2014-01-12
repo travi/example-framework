@@ -1,6 +1,7 @@
 site:
   css:
     - /resources/thirdparty/travi-styles/css/travi-baseline.css
+    - /resources/thirdparty/travi-styles/css/travi-basic.css
   js:
     - framework
   small:

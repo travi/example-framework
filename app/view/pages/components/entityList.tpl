@@ -1,0 +1,1 @@
+{include file='components/entityList.tpl' section=$content}
