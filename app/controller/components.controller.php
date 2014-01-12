@@ -32,7 +32,14 @@ class Components extends AbstractController
      */
     public function index(&$request, &$response)
     {
-        $response->setContent($this->config['nav']['ui components']);
+
+        $response->setContent(
+                array(
+                'forms' => '/components/forms/',
+                'icons' => '/components/icons/',
+                'entity list' => '/components/entityList/'
+            )
+        );
     }
 
     /**
