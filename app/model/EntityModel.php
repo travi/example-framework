@@ -4,24 +4,12 @@ use travi\framework\model\CrudModel;
 
 class EntityModel extends CrudModel {
 
-    function add($entity)
-    {
-        // TODO: Implement add() method.
-    }
+    private $entities;
 
-    function getById($id)
-    {
-        // TODO: Implement getById() method.
-    }
-
-    function updateById($id, $entity)
-    {
-        // TODO: Implement updateById() method.
-    }
-
-    function getList($filters = array())
+    function __construct()
     {
         $entity1 = new Entity();
+        $entity1->setId(1);
         $entity1->setTitle('Example Entity');
         $entity1->setContent(
             "<p> well, do you have anything to say for yourself? this is the ak-47 assault rifle, the preferred weapon
@@ -35,6 +23,7 @@ class EntityModel extends CrudModel {
         );
 
         $entity2 = new Entity();
+        $entity2->setId(2);
         $entity2->setTitle('Another Example');
         $entity2->setContent(
             "<p> no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you
@@ -48,10 +37,31 @@ class EntityModel extends CrudModel {
             report!' and 'i may have found a way out of here. </p>"
         );
 
-        return array(
+        $this->entities = array(
             $entity1,
             $entity2
         );
+    }
+
+
+    function add($entity)
+    {
+        // TODO: Implement add() method.
+    }
+
+    function getById($id)
+    {
+        return $this->entities[$id - 1];
+    }
+
+    function updateById($id, $entity)
+    {
+        // TODO: Implement updateById() method.
+    }
+
+    function getList($filters = array())
+    {
+        return $this->entities;
     }
 
     function deleteById($id)

@@ -4,6 +4,7 @@ class Entity {
 
     private $title;
     private $content;
+    private $id;
 
     public function setTitle($title)
     {
@@ -23,5 +24,15 @@ class Entity {
     public function getContent()
     {
         return $this->content;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function getId()
+    {
+        return $this->id;
     }
 }

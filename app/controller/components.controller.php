@@ -32,7 +32,6 @@ class Components extends AbstractController
      */
     public function index(&$request, &$response)
     {
-
         $response->setContent(
                 array(
                 'forms' => '/components/forms/',

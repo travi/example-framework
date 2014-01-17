@@ -1,6 +1,9 @@
 <?php
 
+use travi\framework\components\Forms\FieldSet;
 use travi\framework\components\Forms\Form;
+use travi\framework\components\Forms\inputs\RichTextArea;
+use travi\framework\components\Forms\inputs\TextInput;
 use travi\framework\content\collection\EntityBlock;
 use travi\framework\content\collection\EntityList;
 use travi\framework\mappers\CrudMapper;
@@ -10,13 +13,27 @@ require_once __DIR__ . '/../model/domain/Entity.php';
 class EntityMapper extends CrudMapper {
 
     /**
-     * @param $entity
+     * @param $entity Entity
      * @internal param $action
      * @return Form
      */
     public function mapToForm($entity = null)
     {
-        // TODO: Implement mapToForm() method.
+        $form = new Form();
+
+        $this->addFieldsTo($form);
+
+        if (isset($entity)) {
+            $this->setFieldValues(
+                $form,
+                array(
+                    'title' => $entity->getTitle(),
+                    'content' => $entity->getContent()
+                )
+            );
+        }
+
+        return $form;
     }
 
     /**
@@ -46,6 +63,7 @@ class EntityMapper extends CrudMapper {
     {
         $entityBlock = new EntityBlock();
 
+        $entityBlock->setId($entity->getId());
         $entityBlock->setTitle($entity->getTitle());
         $entityBlock->setSummary($entity->getContent());
 
@@ -65,7 +83,25 @@ class EntityMapper extends CrudMapper {
      */
     protected function addFieldsTo($form)
     {
-        // TODO: Implement addFieldsTo() method.
+        $fieldSet = new FieldSet();
+
+        $fieldSet->addFormElement(
+            new TextInput(
+                array(
+                    'label' => 'Title'
+                )
+            )
+        );
+
+        $fieldSet->addFormElement(
+            new RichTextArea(
+                array(
+                    'label' => 'Content'
+                )
+            )
+        );
+
+        $form->addFormElement($fieldSet);
     }
 
     /**
