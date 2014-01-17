@@ -55,6 +55,29 @@ class EntityMapper extends CrudMapper {
         return $list;
     }
 
+    public function mapFromDb($entry)
+    {
+        $entity = new Entity();
+
+        $entity->setId($entry['id']);
+        $entity->setTitle($entry['title']);
+        $entity->setContent($entry['content']);
+
+        return $entity;
+    }
+
+
+    public function mapListFromDb($array)
+    {
+        $list = array();
+
+        foreach ($array as $entry) {
+            array_push($list, $this->mapFromDb($entry));
+        }
+
+        return $list;
+    }
+
     /**
      * @param $entity Entity
      * @return EntityBlock

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd"
+        logicalFilePath="config/db/changeLogs/travi.xml">
+
+    <changeSet id="1" author="travi">
+        <createTable tableName="entities">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="content" type="longtext">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <insert tableName="entities">
+            <column name="title" value="Example Entity"/>
+            <column name="content" value="well, do you have anything to say for yourself? this is the ak-47 assault rifle, the preferred weapon
+            of your enemy; and it makes a distinctive sound when fired at you, so remember it. i did the same thing to
+            gandhi, he didn't eat for three weeks. cities fall but they are rebuilt. heroes die but they are remembered.
+            rehabilitated? well, now let me see. you know, i don't have any idea what that means. man's gotta know his
+            limitations. bruce... i'm god. you want a guarantee, buy a toaster. let me tell you something my friend.
+            hope is a dangerous thing. hope can drive a man insane. when a naked man's chasing a woman through an alley
+            with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. you measure yourself
+            by the people who measure themselves by you. this is my gun, clyde!"/>
+        </insert>
+        <insert tableName="entities">
+            <column name="title" value="Another Example"/>
+            <column name="content" value="no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you
+            can't now, being dead and all. boxing is about respect. getting it for yourself, and taking it away from the
+            other guy. don't p!ss down my back and tell me it's raining. i don't think they tried to market it to the
+            billionaire, spelunking, base-jumping crowd. what you have to ask yourself is, do i feel lucky. well do ya'
+            punk? dyin' ain't much of a livin', boy. that tall drink of water with the silver spoon up his ass. i now
+            issue a new commandment: thou shalt do the dance. you see, in this world there's two kinds of people, my
+            friend: those with loaded guns and those who dig. you dig. are you feeling lucky punk circumstances have
+            taught me that a man's ethics are the only possessions he will take beyond the grave. here. put that in your
+            report!' and 'i may have found a way out of here."/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

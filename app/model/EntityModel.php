@@ -2,7 +2,15 @@
 
 use travi\framework\model\CrudModel;
 
-class EntityModel extends CrudModel {
+/**
+ * Class EntityModel
+ * @PdInject db method:setDb
+ * @PdInject new:EntityMapper method:setMapper
+ */
+class EntityModel extends CrudModel
+{
+    /** @var  EntityMapper */
+    protected $mapper;
 
     private $entities;
 
@@ -61,7 +69,22 @@ class EntityModel extends CrudModel {
 
     function getList($filters = array())
     {
-        return $this->entities;
+//        return $this->entities;
+
+        $query = "
+            SELECT
+                id,
+                title,
+                content
+            FROM
+                entities";
+
+        $stmt = $this->db->prepare($query);
+
+        $stmt->execute();
+
+        return $this->mapper->mapListFromDb($stmt->fetchAll());
+
     }
 
     function deleteById($id)
