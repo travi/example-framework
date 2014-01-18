@@ -105,6 +105,18 @@ class EntityModel extends CrudModel
 
     function deleteById($id)
     {
-        // TODO: Implement deleteById() method.
+        $query = "
+                DELETE FROM
+                    entities
+                WHERE
+                    id = :id";
+
+        $stmt = $this->db->prepare($query);
+
+        $stmt->execute(
+            array(
+                ':id' => $id
+            )
+        );
     }
 }

@@ -12,8 +12,15 @@ require_once __DIR__ . '/../mappers/EntityMapper.php';
 class Entities extends CrudController {
 
     const ENTITY = 'Entity';
-
     const URL_PREFIX = '/entities/';
+
+    /** @var EntityModel */
+    protected $model;
+
+    public function deleteById($id, &$response)
+    {
+        $this->model->deleteById($id);
+    }
 
     protected function getEditHeading()
     {

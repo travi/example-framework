@@ -55,7 +55,7 @@ class EntityMapper extends CrudMapper {
         $urlPrefix = Entities::URL_PREFIX;
         $list = new EntityList($urlPrefix);
 
-        $list->setRemove($urlPrefix, "Are you sure you wish to REMOVE this blog entry?");
+        $list->setRemove($urlPrefix, "Are you sure you wish to REMOVE this entity?");
 
         foreach ($entities as $entity) {
             $list->addEntity($this->mapToEntityBlock($entity));
