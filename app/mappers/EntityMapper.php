@@ -4,6 +4,7 @@ use travi\framework\components\Forms\FieldSet;
 use travi\framework\components\Forms\Form;
 use travi\framework\components\Forms\inputs\RichTextArea;
 use travi\framework\components\Forms\inputs\TextInput;
+use travi\framework\components\Forms\SubmitButton;
 use travi\framework\content\collection\EntityBlock;
 use travi\framework\content\collection\EntityList;
 use travi\framework\mappers\CrudMapper;
@@ -19,7 +20,15 @@ class EntityMapper extends CrudMapper {
      */
     public function mapToForm($entity = null)
     {
-        $form = new Form();
+        $action = Entities::URL_PREFIX;
+        if (isset($entity)) {
+            $action .= $entity->getId();
+        }
+        $form = new Form(
+            array(
+                'action' => $action
+            )
+        );
 
         $this->addFieldsTo($form);
 
@@ -95,10 +104,16 @@ class EntityMapper extends CrudMapper {
 
     /**
      * @param $form Form
+     * @return \Entity
      */
     public function mapFromForm($form)
     {
-        // TODO: Implement mapFromForm() method.
+        $entity = new Entity();
+
+        $entity->setTitle($form->getFieldByName('title')->getValue());
+        $entity->setContent($form->getFieldByName('content')->getValue());
+
+        return $entity;
     }
 
     /**
@@ -124,6 +139,14 @@ class EntityMapper extends CrudMapper {
             )
         );
 
+        $fieldSet->addFormElement(
+            new SubmitButton(
+                array(
+                    'label' => 'Submit'
+                )
+            )
+        );
+
         $form->addFormElement($fieldSet);
     }
 
@@ -132,6 +155,11 @@ class EntityMapper extends CrudMapper {
      */
     public function mapRequestToForm()
     {
-        // TODO: Implement mapRequestToForm() method.
+        $form = new Form();
+
+        $this->addFieldsTo($form);
+        $this->mapRequestValuesToForm($form);
+
+        return $form;
     }
 }

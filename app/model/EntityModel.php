@@ -12,9 +12,28 @@ class EntityModel extends CrudModel
     /** @var  EntityMapper */
     protected $mapper;
 
+    /**
+     * @param $entity Entity
+     * @return string
+     */
     function add($entity)
     {
-        // TODO: Implement add() method.
+        $stmt = $this->db->prepare(
+            "INSERT INTO
+                entities
+            SET
+                title = :title,
+                content = :content"
+        );
+
+        $stmt->execute(
+            array(
+                ':title' => $entity->getTitle(),
+                ':content' => $entity->getContent()
+            )
+        );
+
+        return $this->db->lastInsertId();
     }
 
     function getById($id)
@@ -40,9 +59,30 @@ class EntityModel extends CrudModel
         return $this->mapper->mapFromDb($stmt->fetch());
     }
 
+    /**
+     * @param $id
+     * @param $entity Entity
+     */
     function updateById($id, $entity)
     {
-        // TODO: Implement updateById() method.
+        $query = "
+            UPDATE
+                entities
+            SET
+                title = :title,
+                content = :content
+            WHERE
+                id = :id";
+
+        $stmt = $this->db->prepare($query);
+
+        $stmt->execute(
+            array(
+                ':id' => $id,
+                ':title' => $entity->getTitle(),
+                ':content' => $entity->getContent()
+            )
+        );
     }
 
     function getList($filters = array())
