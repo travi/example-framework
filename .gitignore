@@ -5,3 +5,6 @@ node_modules/
 bower_components/
 doc_root/resources/css/
 doc_root/resources/thirdparty/
+puppet/modules/
+puppet/.librarian
+puppet/.tmp
