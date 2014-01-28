@@ -1,11 +1,5 @@
-# make sure the packages are up to date before beginning
-exec { 'apt-get update':
-  command => '/usr/bin/apt-get update'
-}
-
 class { 'apache':
   mpm_module => 'prefork',
-  require => Exec["apt-get update"],
 }
 
 apache::vhost { 'travi-framework-sample.dev':
