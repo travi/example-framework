@@ -1,0 +1,7 @@
+compile: sass
+
+build:
+  - bower
+  - compile
+
+default: build
