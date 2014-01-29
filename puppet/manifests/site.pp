@@ -27,11 +27,11 @@ mysql::db { 'example':
   password => 'djgaiefuzvndldjds',
   host     => 'localhost',
   grant    => ['ALL'],
+  before   => Exec['ant update db'],
 }
 
 class { 'ant': }
 class { 'java': }
-
 
 exec { 'ant update db':
   command => '/usr/bin/ant -buildfile /vagrant/build.xml toLocal update-example-databases',
