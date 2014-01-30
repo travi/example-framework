@@ -5,4 +5,5 @@
     <li class="icon-edit">Edit</li>
     <li class="icon-remove">Delete</li>
     <li class="icon-plus">Add</li>
+    <li class="icon-open-id">OpenID</li>
 </ul>
