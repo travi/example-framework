@@ -10,6 +10,7 @@
     "grunt-contrib-copy": "~0.4.0",
     "grunt-bower-task": "~0.3.1",
     "load-grunt-config": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-trial": "https://github.com/travi/grunt-trial/tarball/master"
   }
 }
