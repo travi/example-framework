@@ -2,7 +2,7 @@
   "name": "travi-framework-sample",
   "dependencies": {
     "travi-framework": "latest",
-    "travi-ui": "~0.7.1"
+    "travi-ui": "https://github.com/travi/travi-ui.git#dialog"
   },
   "devDependencies": {
     "travi-test-utils": "latest"
