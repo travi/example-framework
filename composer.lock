@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7febf9a46177885462f3a6f44b57a358",
+    "hash": "b00a578e7e0c0f3bc6f888a488064786",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -47,7 +47,7 @@
         },
         {
             "name": "html2text/html2text",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtibben/html2text.git",
@@ -120,11 +120,11 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "v3.1.16",
+            "version": "v3.1.17",
             "source": {
                 "type": "svn",
                 "url": "http://smarty-php.googlecode.com/svn",
-                "reference": "/tags/v3.1.16/@4802"
+                "reference": "/tags/v3.1.17/@4818"
             },
             "require": {
                 "php": ">=5.2"
@@ -160,7 +160,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-12-17 16:56:58"
+            "time": "2014-03-12 20:51:46"
         },
         {
             "name": "travi/framework",
@@ -168,23 +168,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "fc320e535c1d1288118ad9454135413d0d5215c7"
+                "reference": "acc0d2cb90759979554b41f62eab2f0cd6e50e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/fc320e535c1d1288118ad9454135413d0d5215c7",
-                "reference": "fc320e535c1d1288118ad9454135413d0d5215c7",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/acc0d2cb90759979554b41f62eab2f0cd6e50e77",
+                "reference": "acc0d2cb90759979554b41f62eab2f0cd6e50e77",
                 "shasum": ""
             },
             "require": {
                 "fp/lightopenid": "dev-master",
-                "html2text/html2text": "dev-master",
+                "html2text/html2text": "1.0.0",
                 "lespoilus/spyc": "dev-master",
                 "smarty/smarty": "3.1.*@stable"
             },
             "require-dev": {
-                "behat/behat": "2.4.5",
-                "phpunit/phpunit": "3.7.*"
+                "behat/behat": "2.5.*",
+                "phpunit/phpunit": "4.0.*"
             },
             "type": "library",
             "autoload": {
@@ -205,7 +205,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-01-13 04:10:04"
+            "time": "2014-04-18 00:04:01"
         }
     ],
     "packages-dev": [
@@ -691,9 +691,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "travi/framework": 20
+    },
     "platform": [
 
     ],
