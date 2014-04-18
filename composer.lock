@@ -168,12 +168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "acc0d2cb90759979554b41f62eab2f0cd6e50e77"
+                "reference": "231a607f69f39eec827f80af6891d0415d4ab72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/acc0d2cb90759979554b41f62eab2f0cd6e50e77",
-                "reference": "acc0d2cb90759979554b41f62eab2f0cd6e50e77",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/231a607f69f39eec827f80af6891d0415d4ab72b",
+                "reference": "231a607f69f39eec827f80af6891d0415d4ab72b",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-04-18 00:04:01"
+            "time": "2014-04-18 03:03:59"
         }
     ],
     "packages-dev": [
