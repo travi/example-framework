@@ -1,27 +1,28 @@
 {
-    "name": "travi-framework-sample",
-    "dependencies": {
-        "travi-framework": "latest"
+  "name": "travi-framework-sample",
+  "dependencies": {
+    "travi-framework": "latest",
+    "travi-ui": "~0.7.1"
+  },
+  "devDependencies": {
+    "travi-test-utils": "latest"
+  },
+  "exportsOverride": {
+    "amplify": {
+      ".": "core/amplify.core.js"
     },
-    "devDependencies": {
-        "travi-test-utils": "latest"
+    "jquery-requestAnimationFrame": {
+      ".": "src/jquery.requestAnimationFrame.js"
     },
-    "exportsOverride": {
-        "amplify": {
-            ".": "core/amplify.core.js"
-        },
-        "jquery-requestAnimationFrame": {
-            ".": "src/jquery.requestAnimationFrame.js"
-        },
-        "travi-core": {
-            "js": "js/",
-            "templates": "templates/"
-        },
-        "wymeditor": {
-            ".": "dist/wymeditor"
-        },
-        "jsrender": {
-            ".": "*.js"
-        }
+    "travi-core": {
+      "js": "js/",
+      "templates": "templates/"
+    },
+    "wymeditor": {
+      ".": "dist/wymeditor"
+    },
+    "jsrender": {
+      ".": "*.js"
     }
+  }
 }
