@@ -18,6 +18,9 @@
       "js": "js/",
       "templates": "templates/"
     },
+    "travi-ui": {
+      "js": "js/"
+    },
     "wymeditor": {
       ".": "dist/wymeditor"
     },
