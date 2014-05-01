@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "b00a578e7e0c0f3bc6f888a488064786",
+    "hash": "cea4ef76ea566a37b0646ee16ae78b2b",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -164,16 +164,16 @@
         },
         {
             "name": "travi/framework",
-            "version": "dev-master",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "231a607f69f39eec827f80af6891d0415d4ab72b"
+                "reference": "45228f1a43e847564efe4a731e9c4579fb684e5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/231a607f69f39eec827f80af6891d0415d4ab72b",
-                "reference": "231a607f69f39eec827f80af6891d0415d4ab72b",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/45228f1a43e847564efe4a731e9c4579fb684e5e",
+                "reference": "45228f1a43e847564efe4a731e9c4579fb684e5e",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,9 @@
             },
             "require-dev": {
                 "behat/behat": "2.5.*",
-                "phpunit/phpunit": "4.0.*"
+                "phing/phing": "2.7.0",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.5.2"
             },
             "type": "library",
             "autoload": {
@@ -205,7 +207,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-04-18 03:03:59"
+            "time": "2014-05-01 02:55:23"
         }
     ],
     "packages-dev": [
@@ -691,9 +693,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "travi/framework": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],

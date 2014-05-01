@@ -13,7 +13,7 @@
         "process-timeout": 1000
     },
     "require": {
-        "travi/framework": "dev-master"
+        "travi/framework": "0.7.0"
     },
     "require-dev": {
         "behat/behat": "2.4.5"
