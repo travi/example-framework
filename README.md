@@ -1,5 +1,6 @@
 Sample Implementation of the Travi Framework
 ============================================
+[![Dependency Status](https://gemnasium.com/travi/example-framework.svg)](https://gemnasium.com/travi/example-framework)
 
 This project is simply an implementation of the [framework] (https://github.com/travi/php-framework). A
 [Vagrant] (http://vagrantup.com) VM definition is also included to make it simple to see it in action.
