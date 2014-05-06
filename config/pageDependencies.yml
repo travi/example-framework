@@ -8,3 +8,7 @@ site:
     js:
       - animationFrame
       - /resources/thirdparty/travi-slide-nav/jquery.slideNav.js
+entities:
+  index:
+    css:
+      - /resources/thirdparty/travi-styles/css/travi-form.css

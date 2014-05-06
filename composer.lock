@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "cea4ef76ea566a37b0646ee16ae78b2b",
+    "hash": "33b6e85887895e6b9d7bf19f22b97bba",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -164,16 +164,16 @@
         },
         {
             "name": "travi/framework",
-            "version": "0.7.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "45228f1a43e847564efe4a731e9c4579fb684e5e"
+                "reference": "1c97691c946c269edc02ea8a197a98f8be81f3d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/45228f1a43e847564efe4a731e9c4579fb684e5e",
-                "reference": "45228f1a43e847564efe4a731e9c4579fb684e5e",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/1c97691c946c269edc02ea8a197a98f8be81f3d6",
+                "reference": "1c97691c946c269edc02ea8a197a98f8be81f3d6",
                 "shasum": ""
             },
             "require": {
@@ -186,6 +186,7 @@
                 "behat/behat": "2.5.*",
                 "phing/phing": "2.7.0",
                 "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master",
                 "squizlabs/php_codesniffer": "1.5.2"
             },
             "type": "library",
@@ -207,7 +208,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-05-01 02:55:23"
+            "time": "2014-05-06 03:10:04"
         }
     ],
     "packages-dev": [
@@ -689,17 +690,9 @@
             "time": "2013-11-25 10:21:43"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ],
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "platform": [],
+    "platform-dev": []
 }
