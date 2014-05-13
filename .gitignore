@@ -8,3 +8,4 @@ doc_root/resources/thirdparty/
 puppet/modules/
 puppet/.librarian
 puppet/.tmp
+.sass-cache
