@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "33b6e85887895e6b9d7bf19f22b97bba",
+    "hash": "046230e468e96c94c419b048a2c44abc",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -120,11 +120,11 @@
         },
         {
             "name": "smarty/smarty",
-            "version": "v3.1.17",
+            "version": "v3.1.18",
             "source": {
                 "type": "svn",
                 "url": "http://smarty-php.googlecode.com/svn",
-                "reference": "/tags/v3.1.17/@4818"
+                "reference": "/tags/v3.1.18/@4839"
             },
             "require": {
                 "php": ">=5.2"
@@ -160,20 +160,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-03-12 20:51:46"
+            "time": "2014-05-08 18:38:30"
         },
         {
             "name": "travi/framework",
-            "version": "0.8.0",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "1c97691c946c269edc02ea8a197a98f8be81f3d6"
+                "reference": "5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/1c97691c946c269edc02ea8a197a98f8be81f3d6",
-                "reference": "1c97691c946c269edc02ea8a197a98f8be81f3d6",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5",
+                "reference": "5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-05-06 03:10:04"
+            "time": "2014-05-15 02:28:00"
         }
     ],
     "packages-dev": [

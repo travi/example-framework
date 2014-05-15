@@ -1,7 +1,7 @@
 {
   "name": "travi-framework-sample",
   "dependencies": {
-    "travi-framework": "latest"
+    "travi-framework": "0.5.0"
   },
   "devDependencies": {
     "travi-test-utils": "latest"
@@ -23,5 +23,8 @@
     "jsrender": {
       ".": "*.js"
     }
+  },
+  "resolutions": {
+    "jquery": "1.10.x"
   }
 }
