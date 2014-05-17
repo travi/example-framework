@@ -7,13 +7,6 @@ This project is simply an implementation of the [framework] (https://github.com/
 
 ## To view the example locally:
 
-### Set up the server instance
-* Ensure Vagrant and VirtualBox are installed
-* Install the Vagrant hosts updater plugin (<https://github.com/cogitatio/vagrant-hostsupdater>)
-    * `vagrant plugin install vagrant-hostsupdater`
-* `vagrant up`
-* The script updates your hosts file automatically using sudo, so you will need to provide your password to enable this.
-
 ### Install dependencies
 
 #### composer
@@ -28,6 +21,13 @@ This project is simply an implementation of the [framework] (https://github.com/
 
 #### bower
 * `grunt bower`
+
+### Set up the server instance
+* Ensure Vagrant and VirtualBox are installed
+* Install the Vagrant hosts updater plugin (<https://github.com/cogitatio/vagrant-hostsupdater>)
+    * `vagrant plugin install vagrant-hostsupdater`
+    * `vagrant up`
+* The script updates your hosts file automatically using sudo, so you will need to provide your password to enable this.
 
 ### Compile Styles
 * `grunt compile`
