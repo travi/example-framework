@@ -126,7 +126,8 @@ class EntityMapper extends CrudMapper {
         $fieldSet->addFormElement(
             new TextInput(
                 array(
-                    'label' => 'Title'
+                    'label' => 'Title',
+                    'validations' => array('required')
                 )
             )
         );
