@@ -1,4 +1,6 @@
-compile: sass
+compile:
+  - sass
+  - copy
 
 build:
   - bower
