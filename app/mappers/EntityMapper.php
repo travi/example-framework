@@ -5,8 +5,8 @@ use travi\framework\components\Forms\Form;
 use travi\framework\components\Forms\inputs\RichTextArea;
 use travi\framework\components\Forms\inputs\TextInput;
 use travi\framework\components\Forms\SubmitButton;
-use travi\framework\content\collection\EntityBlock;
-use travi\framework\content\collection\EntityList;
+use travi\framework\collection\EntityBlock;
+use travi\framework\collection\EntityList;
 use travi\framework\mappers\CrudMapper;
 
 require_once __DIR__ . '/../model/domain/Entity.php';
@@ -52,10 +52,7 @@ class EntityMapper extends CrudMapper {
      */
     public function mapListToEntityList($entities)
     {
-        $urlPrefix = Entities::URL_PREFIX;
-        $list = new EntityList($urlPrefix);
-
-        $list->setRemove($urlPrefix, "Are you sure you wish to REMOVE this entity?");
+        $list = new EntityList(Entities::URL_PREFIX);
 
         foreach ($entities as $entity) {
             $list->addEntity($this->mapToEntityBlock($entity));
@@ -91,11 +88,13 @@ class EntityMapper extends CrudMapper {
      * @param $entity Entity
      * @return EntityBlock
      */
-    private function mapToEntityBlock($entity)
+    public function mapToEntityBlock($entity)
     {
-        $entityBlock = new EntityBlock();
+        $entityBlock = new EntityBlock($entity->getId(), Entities::URL_PREFIX);
 
         $entityBlock->setId($entity->getId());
+        $entityBlock->selfLink = Entities::URL_PREFIX . $entity->getId();
+        $entityBlock->addRemoveAction();
         $entityBlock->setTitle($entity->getTitle());
         $entityBlock->setSummary($entity->getContent());
 

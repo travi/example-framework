@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "046230e468e96c94c419b048a2c44abc",
+    "hash": "564a2bf8bbf1bc9cf002766834f54661",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -164,16 +164,16 @@
         },
         {
             "name": "travi/framework",
-            "version": "0.9.0",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5"
+                "reference": "ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5",
-                "reference": "5ec83ecd6d0b9f7447d90eee5c61002836f6e8e5",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4",
+                "reference": "ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-05-15 02:28:00"
+            "time": "2014-06-10 03:20:12"
         }
     ],
     "packages-dev": [
