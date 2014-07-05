@@ -9,7 +9,7 @@ task :dependencies do
     run('grunt build')
 end
 
-desc 'initialize'
+desc 'initialize the workspace'
 task :initialize do
     Rake::Task["dependencies"].invoke
     Dir.mkdir("puppet/modules")
