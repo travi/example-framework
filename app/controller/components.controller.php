@@ -58,7 +58,7 @@ class Components extends AbstractController
      */
     public function forms(&$request, &$response)
     {
-        $form = new Form();
+        $form = new Form(array());
 
         $inputs = new FieldSet();
         $inputs->setLegend('Inputs');
@@ -164,7 +164,7 @@ class Components extends AbstractController
         $form->addFormElement($choices);
         $form->addFormElement($textAreas);
 
-        $form->addFormElement(
+        $form->addAction(
             new SubmitButton(
                 array(
                     'label' => 'Submit This Form'

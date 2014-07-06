@@ -20,6 +20,8 @@ class Entities extends CrudController {
     public function deleteById($id, &$response)
     {
         $this->model->deleteById($id);
+
+        $response->addToResponse('resource', self::URL_PREFIX . $id);
     }
 
     protected function getEditHeading()

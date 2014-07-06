@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "564a2bf8bbf1bc9cf002766834f54661",
+    "hash": "64641cbb5eb1ae7d76c01362e4b4cd13",
     "packages": [
         {
             "name": "fp/lightopenid",
@@ -76,26 +76,31 @@
             "time": "2013-12-26 04:38:06"
         },
         {
-            "name": "lespoilus/spyc",
-            "version": "dev-master",
+            "name": "mustangostang/spyc",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lespoilus/spyc.git",
-                "reference": "5a5bacdef1e514bdbb30701f13d9867140a6a21b"
+                "url": "https://github.com/mustangostang/spyc.git",
+                "reference": "dc4785b4d7227fd9905e086d499fb8abfadf9977"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lespoilus/spyc/zipball/5a5bacdef1e514bdbb30701f13d9867140a6a21b",
-                "reference": "5a5bacdef1e514bdbb30701f13d9867140a6a21b",
+                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/dc4785b4d7227fd9905e086d499fb8abfadf9977",
+                "reference": "dc4785b4d7227fd9905e086d499fb8abfadf9977",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
             "autoload": {
                 "files": [
-                    "spyc.php"
+                    "Spyc.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -109,14 +114,13 @@
                 }
             ],
             "description": "A simple YAML loader/dumper class for PHP",
-            "homepage": "https://github.com/lespoius/spyc/",
+            "homepage": "https://github.com/mustangostang/spyc/",
             "keywords": [
                 "spyc",
                 "yaml",
-                "yml",
-                "zf2"
+                "yml"
             ],
-            "time": "2012-10-15 11:52:47"
+            "time": "2013-02-21 10:52:01"
         },
         {
             "name": "smarty/smarty",
@@ -164,22 +168,22 @@
         },
         {
             "name": "travi/framework",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4"
+                "reference": "ee6f68d85721e21386e596d4235169d453c9024b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4",
-                "reference": "ca9d0f1d3d781ecc52056e6bd8e4995f0e1879c4",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/ee6f68d85721e21386e596d4235169d453c9024b",
+                "reference": "ee6f68d85721e21386e596d4235169d453c9024b",
                 "shasum": ""
             },
             "require": {
                 "fp/lightopenid": "dev-master",
                 "html2text/html2text": "1.0.0",
-                "lespoilus/spyc": "dev-master",
+                "mustangostang/spyc": "0.5.1",
                 "smarty/smarty": "3.1.*@stable"
             },
             "require-dev": {
@@ -187,7 +191,7 @@
                 "phing/phing": "2.7.0",
                 "phpunit/phpunit": "3.7.*",
                 "satooshi/php-coveralls": "dev-master",
-                "squizlabs/php_codesniffer": "1.5.2"
+                "squizlabs/php_codesniffer": "1.5.3"
             },
             "type": "library",
             "autoload": {
@@ -208,7 +212,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-06-10 03:20:12"
+            "time": "2014-07-05 23:43:16"
         }
     ],
     "packages-dev": [

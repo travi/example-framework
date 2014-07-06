@@ -8,6 +8,7 @@ use travi\framework\components\Forms\SubmitButton;
 use travi\framework\collection\EntityBlock;
 use travi\framework\collection\EntityList;
 use travi\framework\mappers\CrudMapper;
+use travi\framework\view\objects\LinkView;
 
 require_once __DIR__ . '/../model/domain/Entity.php';
 
@@ -53,6 +54,8 @@ class EntityMapper extends CrudMapper {
     public function mapListToEntityList($entities)
     {
         $list = new EntityList(Entities::URL_PREFIX);
+        $list->add = new LinkView('Add Entity', Entities::URL_PREFIX . 'add');
+        $list->pluralType = 'Entities';
 
         foreach ($entities as $entity) {
             $list->addEntity($this->mapToEntityBlock($entity));
@@ -139,7 +142,14 @@ class EntityMapper extends CrudMapper {
             )
         );
 
-        $fieldSet->addFormElement(
+        $form->addFormElement($fieldSet);
+
+
+        $cancelLink = new LinkView('Cancel', Entities::URL_PREFIX);
+        $cancelLink->addTag('cancel');
+        $form->addAction($cancelLink);
+
+        $form->addAction(
             new SubmitButton(
                 array(
                     'label' => 'Submit'
@@ -147,7 +157,6 @@ class EntityMapper extends CrudMapper {
             )
         );
 
-        $form->addFormElement($fieldSet);
     }
 
     /**
@@ -155,7 +164,7 @@ class EntityMapper extends CrudMapper {
      */
     public function mapRequestToForm()
     {
-        $form = new Form();
+        $form = new Form(array());
 
         $this->addFieldsTo($form);
         $this->mapRequestValuesToForm($form);
