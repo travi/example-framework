@@ -39,6 +39,9 @@ exec { 'ant update db':
   cwd     => '/vagrant',
 }
 
+class { 'php': }
+php::module { 'json': }
+
 include stdlib
 include apache
 include apache::mod::rewrite

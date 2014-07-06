@@ -5,8 +5,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
-  config.vm.box = "precise32"
+  config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/ubuntu-1310-x64-virtualbox-puppet.box"
+  config.vm.box = "puppet64"
 
   config.vm.network "private_network", ip: "192.168.8.222"
   config.vm.hostname = "travi-framework-sample.dev"
