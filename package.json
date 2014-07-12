@@ -11,6 +11,6 @@
     "grunt-contrib-sass": "~0.7.3",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-jslint": "~1.1.11",
-    "load-grunt-config": "~0.9.1"
+    "load-grunt-config": "0.10.x"
   }
 }
