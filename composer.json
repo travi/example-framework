@@ -14,8 +14,5 @@
     },
     "require": {
         "travi/framework": "0.11.0"
-    },
-    "require-dev": {
-        "behat/behat": "2.4.5"
     }
 }
