@@ -4,6 +4,7 @@ end
 
 desc 'dependencies'
 task :dependencies do
+    run('bundle install')
     run('composer install')
     run('npm install')
     run('grunt build')
