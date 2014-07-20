@@ -2,6 +2,8 @@ def run(command)
     raise "Failed to execute '#{command}'" if !system(command)
 end
 
+task :default => [:dependencies]
+
 desc 'dependencies'
 task :dependencies do
     run('bundle install')
