@@ -164,6 +164,12 @@ class Components extends AbstractController
         $form->addFormElement($choices);
         $form->addFormElement($textAreas);
 
+        $form->mapErrorMessagesToFields(
+            array(
+                'text_input' => 'This is an example error message'
+            )
+        );
+
         $form->addAction(
             new SubmitButton(
                 array(
