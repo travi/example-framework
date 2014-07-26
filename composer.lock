@@ -4,48 +4,8 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f1e4d06ec89980d55c6060ab4816867",
+    "hash": "f1722c7def988d3cb172ffda45b47a65",
     "packages": [
-        {
-            "name": "fp/lightopenid",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/formapro/LightOpenID.git",
-                "reference": "9bd5d5a1d893b2e2fe340b877617a5c1fa9ee807"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/formapro/LightOpenID/zipball/9bd5d5a1d893b2e2fe340b877617a5c1fa9ee807",
-                "reference": "9bd5d5a1d893b2e2fe340b877617a5c1fa9ee807",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "openid.php",
-                    "provider/provider.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Mewp",
-                    "email": "mewp151+gitorious.org@gmail.com"
-                }
-            ],
-            "description": "A PHP 5 library for easy openid authentication",
-            "homepage": "https://github.com/formapro/LightOpenID",
-            "keywords": [
-                "Authentication",
-                "OpenId",
-                "security"
-            ],
-            "time": "2013-11-28 11:46:46"
-        },
         {
             "name": "html2text/html2text",
             "version": "1.0.0",
@@ -75,6 +35,33 @@
             ],
             "description": "Converts HTML to formatted plain text",
             "time": "2013-12-26 04:38:06"
+        },
+        {
+            "name": "lightopenid/lightopenid",
+            "version": "v0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.gitorious.org/lightopenid/lightopenid.git",
+                "reference": "9d42dc24e4dd34121c98a6491bc3ef7933a68a19"
+            },
+            "require": {
+                "php": ">=5.2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://code.google.com/p/lightopenid/",
+            "keywords": [
+                "OpenId"
+            ],
+            "time": "2013-10-27 16:25:49"
         },
         {
             "name": "mustangostang/spyc",
@@ -169,29 +156,31 @@
         },
         {
             "name": "travi/framework",
-            "version": "0.11.0",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "ee6f68d85721e21386e596d4235169d453c9024b"
+                "reference": "935f5023e06b61aabf5838bcd8d4a9e6560af593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/ee6f68d85721e21386e596d4235169d453c9024b",
-                "reference": "ee6f68d85721e21386e596d4235169d453c9024b",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/935f5023e06b61aabf5838bcd8d4a9e6560af593",
+                "reference": "935f5023e06b61aabf5838bcd8d4a9e6560af593",
                 "shasum": ""
             },
             "require": {
-                "fp/lightopenid": "dev-master",
                 "html2text/html2text": "1.0.0",
+                "lightopenid/lightopenid": "0.7.0",
                 "mustangostang/spyc": "0.5.1",
                 "smarty/smarty": "3.1.*@stable"
             },
             "require-dev": {
                 "behat/behat": "2.5.*",
-                "phing/phing": "2.7.0",
-                "phpunit/phpunit": "3.7.*",
+                "phing/phing": "2.8.1",
+                "phpmd/phpmd": "2.0.0",
+                "phpunit/phpunit": "4.1.*",
                 "satooshi/php-coveralls": "dev-master",
+                "sebastian/phpcpd": "2.0.1",
                 "squizlabs/php_codesniffer": "1.5.3"
             },
             "type": "library",
@@ -213,7 +202,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-07-05 23:43:16"
+            "time": "2014-07-20 19:15:03"
         }
     ],
     "packages-dev": [],

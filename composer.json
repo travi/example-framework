@@ -13,6 +13,6 @@
         "process-timeout": 1000
     },
     "require": {
-        "travi/framework": "0.11.0"
+        "travi/framework": "0.12.1"
     }
 }
