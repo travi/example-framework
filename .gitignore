@@ -3,9 +3,13 @@
 vendor/
 node_modules/
 bower_components/
+
 doc_root/resources/css/
 doc_root/resources/thirdparty/
+.sass-cache
+
 puppet/modules/
 puppet/.librarian
 puppet/.tmp
-.sass-cache
+
+logs/

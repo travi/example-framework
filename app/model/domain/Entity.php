@@ -1,7 +1,7 @@
 <?php
 
-class Entity {
-
+class Entity
+{
     private $title;
     private $content;
     private $id;

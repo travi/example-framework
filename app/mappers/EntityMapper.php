@@ -12,8 +12,8 @@ use travi\framework\view\objects\LinkView;
 
 require_once __DIR__ . '/../model/domain/Entity.php';
 
-class EntityMapper extends CrudMapper {
-
+class EntityMapper extends CrudMapper
+{
     /**
      * @param $entity Entity
      * @internal param $action

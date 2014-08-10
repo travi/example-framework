@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="gates" name="example-framework">
+    <property name="basedir" value="${project.basedir}"/>
+    <property file="build.properties"/>
+
+    <target name="gates">
+        <phingcall target="checkstyle"/>
+        <phingcall target="messDetect"/>
+    </target>
+
+    <fileset dir="app" id="all-src-files">
+        <include name="**/*.php"/>
+    </fileset>
+
+    <target name="checkstyle">
+        <mkdir dir="${build.logs}"/>
+        <phpcodesniffer standard="vendor/travi/framework/build/codingStandard.xml" haltonerror="true" haltonwarning="false">
+            <formatter type="full" usefile="false"/>
+            <formatter type="checkstyle" outfile="${build.logs}/checkstyle.xml"/>
+            <fileset refid="all-src-files" />
+        </phpcodesniffer>
+    </target>
+
+    <target name="messDetect">
+        <mkdir dir="${build.logs}"/>
+        <phpcpd>
+            <fileset refid="all-src-files" />
+            <formatter type="pmd" outfile="${build.logs}/pmd-cpd.xml"/>
+        </phpcpd>
+        <phpmd>
+            <fileset refid="all-src-files" />
+            <formatter type="text" useFile="false" outfile="${build.logs}/pmd.txt"/>
+            <formatter type="xml" useFile="true" outfile="${build.logs}/pmd.xml"/>
+        </phpmd>
+    </target>
+</project>

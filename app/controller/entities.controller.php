@@ -9,8 +9,8 @@ require_once __DIR__ . '/../mappers/EntityMapper.php';
  * @PdInject new:EntityModel method:setModel
  * @PdInject new:EntityMapper method:setMapper
  */
-class Entities extends CrudController {
-
+class Entities extends CrudController
+{
     const ENTITY = 'Entity';
     const URL_PREFIX = '/entities/';
 
