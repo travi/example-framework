@@ -13,3 +13,5 @@ puppet/.librarian
 puppet/.tmp
 
 logs/
+build/
+dist/
