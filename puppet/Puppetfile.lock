@@ -1,23 +1,35 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
+    example42/php (2.0.9)
+      example42/puppi (>= 2.0.0)
+    example42/puppi (2.1.9)
     maestrodev/ant (1.0.4)
       maestrodev/wget (>= 0.0.1)
     maestrodev/wget (1.4.1)
     puppetlabs/apache (1.0.1)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
-    puppetlabs/concat (1.1.0)
-      puppetlabs/stdlib (>= 4.0.0)
     puppetlabs/java (1.1.1)
       puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/mysql (2.2.3)
       puppetlabs/stdlib (>= 3.2.0)
     puppetlabs/stdlib (4.2.1)
+    saz/vim (2.1.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-concat.git
+  ref: 1.0.0
+  sha: 04356974f72b90a1d0f57346a00e95a717924e43
+  specs:
+    puppetlabs/concat (1.0.0)
 
 DEPENDENCIES
+  example42/php (>= 0)
   maestrodev/ant (>= 0)
   puppetlabs/apache (>= 0)
+  puppetlabs/concat (>= 0)
   puppetlabs/java (>= 0)
   puppetlabs/mysql (>= 0)
+  saz/vim (>= 0)
 

@@ -42,6 +42,8 @@ exec { 'ant update db':
 class { 'php': }
 php::module { 'json': }
 
+class { 'vim': }
+
 include stdlib
 include apache
 include apache::mod::rewrite
