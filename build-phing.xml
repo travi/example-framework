@@ -46,7 +46,7 @@
         <mkdir dir="dist"/>
     </target>
 
-    <target name="package" depends="createDeployDirs">
+    <target name="prepareDistribution" depends="createDeployDirs">
         <copy todir="build" preservelastmodified="true">
             <fileset dir=".">
                 <include name="app/**"/>
@@ -54,13 +54,16 @@
                 <include name="doc_root/**"/>
             </fileset>
         </copy>
+    </target>
+
+    <target name="package" depends="prepareDistribution">
         <tar destfile="${deploy.archive}"
              basedir="build"
              compression="bzip2"
              longfile="gnu"/>
     </target>
 
-    <target name="deploy" depends="package">
+    <target name="deploy" depends="prepareDistribution">
         <filesync sourceDir="build" destinationDir="${server.username}@${server.host}:/home/travi/deploy/example-framework"/>
     </target>
 
