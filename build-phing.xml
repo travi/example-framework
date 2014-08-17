@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="gates" name="example-framework">
     <property name="basedir" value="${project.basedir}"/>
+    <property name="shared.dir" value="${basedir}/vendor/travi/framework"/>
+    <property file="${shared.dir}/build/shared.properties"/>
     <property file="build.properties"/>
 
     <target name="gates">
@@ -34,6 +36,12 @@
         </phpmd>
     </target>
 
+    <target name="toLocal">
+        <property name="database.url" value="${local.database.url}"/>
+        <property name="database.username" value="${local.database.username}"/>
+        <property name="database.password" value="${local.database.password}"/>
+    </target>
+
     <target name="toProduction">
         <property name="server.host" value="${prod.server.host}"/>
         <property name="database.url" value="${prod.database.url}"/>
@@ -63,6 +71,17 @@
              longfile="gnu"/>
     </target>
 
+    <target name="updateDatabase">
+        <liquibase-update
+            changelogFile="config/db/changeLogs/example.xml"
+            jar="${ant.lib}${liquibase.jar}"
+            classpathref="${ant.lib}${mysqlDriver.jar}"
+            url="jdbc:mysql://${database.url}:3306/example_framework"
+            username="${database.username}"
+            password="${database.password}"
+        />
+    </target>
+
     <target name="deploy" depends="prepareDistribution">
         <filesync
             sourceDir="build/"
@@ -70,5 +89,6 @@
             backupDir="${server.username}@${server.host}:${deploy.path.root}/example-framework.bak"
             delete="true"
         />
+        <phingcall target="updateDatabase"/>
     </target>
 </project>

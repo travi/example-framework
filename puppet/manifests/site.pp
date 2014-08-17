@@ -22,20 +22,20 @@ class { 'mysql::bindings':
   php_enable => true
 }
 
-mysql::db { 'example':
+mysql::db { 'example_framework':
   user     => 'patch_bot',
   password => 'djgaiefuzvndldjds',
   host     => 'localhost',
   grant    => ['ALL'],
-  before   => Exec['ant update db'],
+  before   => Exec['phing update db'],
 }
 
 class { 'ant': }
 class { 'java': }
 
-exec { 'ant update db':
-  command => '/usr/bin/ant -buildfile /vagrant/build.xml toLocal update-example-databases',
-  require => [Class['ant'], Class['java']],
+exec { 'phing update db':
+  command => '/vagrant/vendor/bin/phing -f /vagrant/build-phing.xml toLocal updateDatabase',
+  require => [Class['java']],
   cwd     => '/vagrant',
 }
 
