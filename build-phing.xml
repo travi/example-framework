@@ -61,6 +61,10 @@
     </target>
 
     <target name="deploy" depends="package">
+        <filesync sourceDir="build" destinationDir="${server.username}@${server.host}:/home/travi/deploy/example-framework"/>
+    </target>
+
+    <target name="deploy-old" depends="package">
         <scp host="${server.host}"
              username="${server.username}"
              todir="/home/travi/deploy/example-framework"
