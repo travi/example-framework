@@ -79,6 +79,8 @@
             url="jdbc:mysql://${database.url}:3306/example_framework"
             username="${database.username}"
             password="${database.password}"
+            passthru="false"
+            checkreturn="true"
         />
     </target>
 
