@@ -62,6 +62,12 @@
                 <include name="doc_root/**"/>
                 <include name="config/**"/>
             </fileset>
+            <filterchain>
+                <replacetokens begintoken="%%" endtoken="%%">
+                    <token key="dbUser" value="myUser" />
+                    <token key="dbPassword" value="myPassword" />
+                </replacetokens>
+            </filterchain>
         </copy>
     </target>
 

@@ -1,0 +1,6 @@
+<?php
+define('DB_HOSTNAME',"mysql.travi.org");
+define('DEF_DB_NAME','example_framework');
+
+define('DB_ADMIN_USERNAME',"%%dbUser%%");
+define('DB_ADMIN_PASSWORD',"%%dbPassword%%");
