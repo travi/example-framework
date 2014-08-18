@@ -87,7 +87,7 @@
     <target name="deploy" depends="prepareDistribution">
         <filesync
             sourceDir="build/"
-            destinationDir="${server.username}@${server.host}:${deploy.path.root}/example-framework"
+            destinationDir="${server.username}@${server.host}:${deploy.path.site}"
             backupDir="${server.username}@${server.host}:${deploy.path.root}/example-framework.bak"
             delete="true"
         />
