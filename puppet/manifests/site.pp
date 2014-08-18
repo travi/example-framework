@@ -34,7 +34,7 @@ class { 'ant': }
 class { 'java': }
 
 exec { 'phing update db':
-  command => '/vagrant/vendor/bin/phing -f /vagrant/build-phing.xml toLocal updateDatabase',
+  command => '/vagrant/vendor/bin/phing toLocal updateDatabase',
   require => [Class['java']],
   cwd     => '/vagrant',
 }
