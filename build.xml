@@ -60,6 +60,7 @@
                 <include name="app/**"/>
                 <include name="vendor/**"/>
                 <include name="doc_root/**"/>
+                <include name="config/**"/>
             </fileset>
         </copy>
     </target>
