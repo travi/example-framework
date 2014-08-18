@@ -16,7 +16,7 @@
         "travi/framework": "0.12.1"
     },
     "require-dev": {
-        "phing/phing": "2.8.1",
+        "phing/phing": "2.8.2",
         "sebastian/phpcpd": "2.0.1",
         "squizlabs/php_codesniffer": "1.5.2",
         "phpmd/phpmd": "2.0.0"

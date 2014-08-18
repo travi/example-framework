@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "50bd278127d2833c7c63e212cd7b80ea",
+    "hash": "c887f5f7c0faabc59436830a5600ec76",
     "packages": [
         {
             "name": "html2text/html2text",
@@ -247,16 +247,16 @@
         },
         {
             "name": "phing/phing",
-            "version": "2.8.1",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "1e06b42fa8f4c5119eda8e9dd39c412250435e24"
+                "reference": "345e8716122cf6c6b59c4894701d8b736f27fca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/1e06b42fa8f4c5119eda8e9dd39c412250435e24",
-                "reference": "1e06b42fa8f4c5119eda8e9dd39c412250435e24",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/345e8716122cf6c6b59c4894701d8b736f27fca9",
+                "reference": "345e8716122cf6c6b59c4894701d8b736f27fca9",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2014-07-01 14:18:47"
+            "time": "2014-07-18 10:23:54"
         },
         {
             "name": "phpmd/phpmd",
@@ -364,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c"
+                "reference": "c22baf744a31f12c936c2e731decd9aad6a14d7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
-                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/c22baf744a31f12c936c2e731decd9aad6a14d7c",
+                "reference": "c22baf744a31f12c936c2e731decd9aad6a14d7c",
                 "shasum": ""
             },
             "require": {
@@ -382,9 +382,6 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                ""
-            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -400,7 +397,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2013-08-02 07:42:54"
+            "time": "2014-08-14 16:53:32"
         },
         {
             "name": "sebastian/finder-facade",
@@ -652,12 +649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "0c91f3355f251dc2ac15d9f9c5e04c014c9b729e"
+                "reference": "919345e2757aa3d3aca1d1ce5a8f53f65d1990ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/0c91f3355f251dc2ac15d9f9c5e04c014c9b729e",
-                "reference": "0c91f3355f251dc2ac15d9f9c5e04c014c9b729e",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/919345e2757aa3d3aca1d1ce5a8f53f65d1990ef",
+                "reference": "919345e2757aa3d3aca1d1ce5a8f53f65d1990ef",
                 "shasum": ""
             },
             "require": {
@@ -700,7 +697,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-08 14:32:04"
+            "time": "2014-08-14 16:37:29"
         },
         {
             "name": "symfony/dependency-injection",
@@ -709,12 +706,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "875fd625118d6e4ff065a2c9c6b33c3b6054bca5"
+                "reference": "c56e7226d6d183053214798b1c06465ce0f4d608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/875fd625118d6e4ff065a2c9c6b33c3b6054bca5",
-                "reference": "875fd625118d6e4ff065a2c9c6b33c3b6054bca5",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/c56e7226d6d183053214798b1c06465ce0f4d608",
+                "reference": "c56e7226d6d183053214798b1c06465ce0f4d608",
                 "shasum": ""
             },
             "require": {
@@ -757,7 +754,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-05 09:07:51"
+            "time": "2014-08-14 16:37:29"
         },
         {
             "name": "symfony/filesystem",
@@ -815,12 +812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "3329a4cb19075326ef2cc2abe848aa21b84905cf"
+                "reference": "f6ba24717b0f3a63d447a3c4c80ba7d0ddb42050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/3329a4cb19075326ef2cc2abe848aa21b84905cf",
-                "reference": "3329a4cb19075326ef2cc2abe848aa21b84905cf",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/f6ba24717b0f3a63d447a3c4c80ba7d0ddb42050",
+                "reference": "f6ba24717b0f3a63d447a3c4c80ba7d0ddb42050",
                 "shasum": ""
             },
             "require": {
@@ -853,7 +850,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-07-28 13:20:53"
+            "time": "2014-08-14 16:37:29"
         },
         {
             "name": "theseer/fdomdocument",
