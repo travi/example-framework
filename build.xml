@@ -64,8 +64,8 @@
             </fileset>
             <filterchain>
                 <replacetokens begintoken="%%" endtoken="%%">
-                    <token key="dbUser" value="myUser" />
-                    <token key="dbPassword" value="myPassword" />
+                    <token key="dbUser" value="${example.user}" />
+                    <token key="dbPassword" value="${example.password}" />
                 </replacetokens>
             </filterchain>
         </copy>
