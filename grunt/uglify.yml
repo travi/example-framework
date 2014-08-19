@@ -1,0 +1,18 @@
+dist:
+  options:
+    preserveComments: some
+  files:
+    -
+      expand: true
+      cwd: "doc_root/resources/js"
+      src: "**/*.js"
+      dest: "doc_root/resources/min/js"
+thirdparty:
+  options:
+    preserveComments: some
+  files:
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty"
+      src: "**/*.js"
+      dest: "doc_root/resources/min/thirdparty"

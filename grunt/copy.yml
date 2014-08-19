@@ -6,3 +6,42 @@ framework:
       src:
         - '*'
       dest: 'doc_root/resources/thirdparty/travi-styles/css/icons/'
+minification:
+  files:
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/travi-styles/img/"
+      src: "**/*"
+      dest: "doc_root/resources/min/thirdparty/travi-styles/img/"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/travi-styles/icons/"
+      src:
+        - "**/*"
+        - "!**/*.js"
+      dest: "doc_root/resources/min/thirdparty/travi-styles/icons/"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/travi-styles/css/icons/"
+      src: "*"
+      dest: "doc_root/resources/min/thirdparty/travi-styles/css/icons/"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/wymeditor/skins/silver/images"
+      src: "*"
+      dest: "doc_root/resources/min/thirdparty/wymeditor/skins/silver/images"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/wymeditor/iframe"
+      src: "**/*"
+      dest: "doc_root/resources/min/thirdparty/wymeditor/iframe"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/wymeditor/skins"
+      src: "*.png"
+      dest: "doc_root/resources/min/thirdparty/wymeditor/skins"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty/wymeditor/plugins/fullscreen"
+      src: "*.gif"
+      dest: "doc_root/resources/min/thirdparty/wymeditor/plugins/fullscreen"

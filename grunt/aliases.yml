@@ -1,9 +1,15 @@
+min:
+  - cssmin
+  - uglify
+  - copy:minification
+
 compile:
   - sass
-  - copy
+  - copy:framework
+  - min
 
 build:
-  - bower
+  - bower:dev
   - compile
 
 default: build

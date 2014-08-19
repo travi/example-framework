@@ -1,0 +1,14 @@
+dist:
+  files:
+    -
+      expand: true
+      cwd: "doc_root/resources/css"
+      src: "**/*.css"
+      dest: "doc_root/resources/min/css"
+    -
+      expand: true
+      cwd: "doc_root/resources/thirdparty"
+      src:
+        - "**/*.css"
+        - "!travi-styles/icons/**/*.css"
+      dest: "doc_root/resources/min/thirdparty"
