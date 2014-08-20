@@ -32,6 +32,8 @@ class Components extends AbstractController
      */
     public function index(&$request, &$response)
     {
+        $response->setTitle('UI Components');
+
         $response->setContent(
             array(
                 'forms' => '/components/forms/',
@@ -48,7 +50,7 @@ class Components extends AbstractController
      */
     public function icons(&$request, &$response)
     {
-
+        $response->setTitle('Icons');
     }
 
     /**
@@ -58,6 +60,8 @@ class Components extends AbstractController
      */
     public function forms(&$request, &$response)
     {
+        $response->setTitle('Forms');
+
         $form = new Form(array());
 
         $inputs = new FieldSet();

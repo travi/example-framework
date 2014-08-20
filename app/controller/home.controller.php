@@ -13,6 +13,6 @@ class Home extends AbstractController
      */
     public function index(&$request, &$response)
     {
-
+        $response->setTitle('Home');
     }
 }
