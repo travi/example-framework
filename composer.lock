@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7a6efec16c1ea6d71dab8751d50bcde7",
+    "hash": "9ce214c9358f72700c8c6368b29174bb",
     "packages": [
         {
             "name": "html2text/html2text",
@@ -227,16 +227,16 @@
         },
         {
             "name": "travi/framework",
-            "version": "0.12.1",
+            "version": "0.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "935f5023e06b61aabf5838bcd8d4a9e6560af593"
+                "reference": "74c70a15fdcaec76c6a97ec50f06a2ad16233629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/935f5023e06b61aabf5838bcd8d4a9e6560af593",
-                "reference": "935f5023e06b61aabf5838bcd8d4a9e6560af593",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/74c70a15fdcaec76c6a97ec50f06a2ad16233629",
+                "reference": "74c70a15fdcaec76c6a97ec50f06a2ad16233629",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +250,7 @@
                 "phing/phing": "2.8.1",
                 "phpmd/phpmd": "2.0.0",
                 "phpunit/phpunit": "4.1.*",
-                "satooshi/php-coveralls": "dev-master",
+                "satooshi/php-coveralls": "0.6.*",
                 "sebastian/phpcpd": "2.0.1",
                 "squizlabs/php_codesniffer": "1.5.3"
             },
@@ -273,7 +273,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-07-20 19:15:03"
+            "time": "2014-07-26 19:31:46"
         }
     ],
     "packages-dev": [
