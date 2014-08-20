@@ -13,5 +13,5 @@ tagLine: Example Implementation of the Travi Framework
 theme:
   site: example-theme.css
 
-#googleAnalytics:
-#  key: UA-2890413-5
+googleAnalytics:
+  key: UA-2890413-8
