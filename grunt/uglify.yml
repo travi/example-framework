@@ -16,3 +16,12 @@ thirdparty:
       cwd: "doc_root/resources/thirdparty"
       src: "**/*.js"
       dest: "doc_root/resources/min/thirdparty"
+framework:
+  options:
+    preserveComments: some
+  files:
+    -
+      expand: true
+      cwd: "vendor/travi/framework/client"
+      src: "**/*.js"
+      dest: "vendor/travi/framework/client/min"
