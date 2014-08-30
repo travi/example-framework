@@ -30,7 +30,6 @@ mysql::db { 'example_framework':
   before   => Exec['phing update db'],
 }
 
-class { 'ant': }
 class { 'java': }
 
 exec { 'phing update db':
