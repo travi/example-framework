@@ -95,7 +95,7 @@
         <filesync
             sourceDir="build/"
             destinationDir="${server.username}@${server.host}:${deploy.path.site}"
-            backupDir="${server.username}@${server.host}:${deploy.path.root}/example-framework.bak"
+            backupDir="${deploy.path.root}/example-framework.bak"
             delete="true"
             verbose="true"
         />
