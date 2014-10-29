@@ -9,6 +9,7 @@ compile:
   - min
 
 build:
+  - clean
   - bower:dev
   - compile
 
