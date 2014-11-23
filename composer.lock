@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "511810699f970ade683998cc1030315f",
+    "hash": "9f31a572605a77082780d5759d77557b",
     "packages": [
         {
             "name": "html2text/html2text",
@@ -238,16 +238,16 @@
         },
         {
             "name": "travi/framework",
-            "version": "dev-master",
+            "version": "v0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "083235dcb9311deacdf7714a624a9b8541ffcaa4"
+                "reference": "dee1a9e9d8d5037e9516c283d3dbddf06dd3211b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/083235dcb9311deacdf7714a624a9b8541ffcaa4",
-                "reference": "083235dcb9311deacdf7714a624a9b8541ffcaa4",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/dee1a9e9d8d5037e9516c283d3dbddf06dd3211b",
+                "reference": "dee1a9e9d8d5037e9516c283d3dbddf06dd3211b",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-11-23 17:28:44"
+            "time": "2014-11-23 17:45:08"
         }
     ],
     "packages-dev": [
@@ -909,9 +909,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "travi/framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []

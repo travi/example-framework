@@ -13,7 +13,7 @@
         "process-timeout": 1000
     },
     "require": {
-        "travi/framework": "dev-master",
+        "travi/framework": "0.14.0",
         "phing/phing": "2.8.2"
     },
     "require-dev": {
