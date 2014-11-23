@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29c75a1d121b8accd8a6c0103da9c343",
+    "hash": "511810699f970ade683998cc1030315f",
     "packages": [
         {
             "name": "html2text/html2text",
@@ -187,12 +187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "8f8d462b8a214875cef2fc9667c7c92181b32ede"
+                "reference": "ffbfe4004365e7e58aa71bf4a49277bb18384fdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/8f8d462b8a214875cef2fc9667c7c92181b32ede",
-                "reference": "8f8d462b8a214875cef2fc9667c7c92181b32ede",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/ffbfe4004365e7e58aa71bf4a49277bb18384fdd",
+                "reference": "ffbfe4004365e7e58aa71bf4a49277bb18384fdd",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
                 "classmap": [
                     "libs/Smarty.class.php",
                     "libs/SmartyBC.class.php",
-                    "libs/sysplugins/smarty_security.php"
+                    "libs/sysplugins/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -234,20 +234,20 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-11-08 16:19:53"
+            "time": "2014-11-23 12:25:09"
         },
         {
             "name": "travi/framework",
-            "version": "0.13.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/travi/php-framework.git",
-                "reference": "2850a8e72a5beff736b7c5d7c3ee0160ea8f4a23"
+                "reference": "083235dcb9311deacdf7714a624a9b8541ffcaa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/travi/php-framework/zipball/2850a8e72a5beff736b7c5d7c3ee0160ea8f4a23",
-                "reference": "2850a8e72a5beff736b7c5d7c3ee0160ea8f4a23",
+                "url": "https://api.github.com/repos/travi/php-framework/zipball/083235dcb9311deacdf7714a624a9b8541ffcaa4",
+                "reference": "083235dcb9311deacdf7714a624a9b8541ffcaa4",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,7 @@
                 }
             ],
             "description": "web framework",
-            "time": "2014-11-08 16:52:22"
+            "time": "2014-11-23 17:28:44"
         }
     ],
     "packages-dev": [
@@ -617,12 +617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "6b6a1dc0df014fedc00fdef04b8ccc666f34fcfa"
+                "reference": "b0da25866bdd29a9264bd958fa81c833cf1aedb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/6b6a1dc0df014fedc00fdef04b8ccc666f34fcfa",
-                "reference": "6b6a1dc0df014fedc00fdef04b8ccc666f34fcfa",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/b0da25866bdd29a9264bd958fa81c833cf1aedb5",
+                "reference": "b0da25866bdd29a9264bd958fa81c833cf1aedb5",
                 "shasum": ""
             },
             "require": {
@@ -632,7 +632,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -656,7 +656,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-11-20 13:24:36"
         },
         {
             "name": "symfony/console",
@@ -665,12 +665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "2fc3644d2e10e14935b2c79e57a5185281eb1eb7"
+                "reference": "84e6129790ce01232729d01603eb17086722e474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/2fc3644d2e10e14935b2c79e57a5185281eb1eb7",
-                "reference": "2fc3644d2e10e14935b2c79e57a5185281eb1eb7",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/84e6129790ce01232729d01603eb17086722e474",
+                "reference": "84e6129790ce01232729d01603eb17086722e474",
                 "shasum": ""
             },
             "require": {
@@ -689,7 +689,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -713,7 +713,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-11-20 13:24:36"
         },
         {
             "name": "symfony/dependency-injection",
@@ -722,12 +722,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "926500fe0b8a6562c4e8b8166a1cb664733804aa"
+                "reference": "84fa0a1e46f1bd4da38dc624b1d7c26f90e221dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/926500fe0b8a6562c4e8b8166a1cb664733804aa",
-                "reference": "926500fe0b8a6562c4e8b8166a1cb664733804aa",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/84fa0a1e46f1bd4da38dc624b1d7c26f90e221dd",
+                "reference": "84fa0a1e46f1bd4da38dc624b1d7c26f90e221dd",
                 "shasum": ""
             },
             "require": {
@@ -746,7 +746,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -770,21 +770,21 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "http://symfony.com",
-            "time": "2014-11-03 03:55:50"
+            "time": "2014-11-16 17:28:29"
         },
         {
             "name": "symfony/filesystem",
-            "version": "dev-master",
+            "version": "2.7.x-dev",
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "7d97789ea01c3c76ecaa59b954d162777033cbd4"
+                "reference": "5bbd9f52cd5ebf7ea85f447b779fcfa8a25a95e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/7d97789ea01c3c76ecaa59b954d162777033cbd4",
-                "reference": "7d97789ea01c3c76ecaa59b954d162777033cbd4",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/5bbd9f52cd5ebf7ea85f447b779fcfa8a25a95e7",
+                "reference": "5bbd9f52cd5ebf7ea85f447b779fcfa8a25a95e7",
                 "shasum": ""
             },
             "require": {
@@ -793,7 +793,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -817,7 +817,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-22 15:54:44"
+            "time": "2014-11-16 17:28:20"
         },
         {
             "name": "symfony/finder",
@@ -826,12 +826,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "d556a66cbe5b2b81e7abc75b4066b057fbc7af94"
+                "reference": "db265d455072fc24f21da6e8b7f94944c7aef53f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/d556a66cbe5b2b81e7abc75b4066b057fbc7af94",
-                "reference": "d556a66cbe5b2b81e7abc75b4066b057fbc7af94",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/db265d455072fc24f21da6e8b7f94944c7aef53f",
+                "reference": "db265d455072fc24f21da6e8b7f94944c7aef53f",
                 "shasum": ""
             },
             "require": {
@@ -840,7 +840,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -864,7 +864,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-26 07:46:28"
+            "time": "2014-11-11 08:37:22"
         },
         {
             "name": "theseer/fdomdocument",
@@ -909,7 +909,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "travi/framework": 20
+    },
     "prefer-stable": false,
     "platform": [],
     "platform-dev": []
