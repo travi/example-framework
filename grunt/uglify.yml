@@ -16,7 +16,10 @@ thirdparty:
     -
       expand: true
       cwd: "doc_root/resources/thirdparty"
-      src: "**/*.js"
+      src:
+        - "**/*.js"
+        - "!**/bower_components/**/*.js"
+        - "!**/node_modules/**/*.js"
       dest: "doc_root/resources/min/thirdparty"
 framework:
   options:
