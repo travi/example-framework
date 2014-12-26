@@ -163,6 +163,14 @@ class Components extends AbstractController
                 )
             )
         );
+        $choices->addFormElement(
+            new RadioButtons(
+                array(
+                    'label' => 'Inline',
+                    'options' => $options
+                )
+            )
+        );
 
         $form->addFormElement($inputs);
         $form->addFormElement($choices);
@@ -170,7 +178,9 @@ class Components extends AbstractController
 
         $form->mapErrorMessagesToFields(
             array(
-                'text_input' => 'This is an example error message'
+                'text_input' => 'This is an example error message',
+                'checkboxes' => 'This is an example error message for a choices group',
+                'inline' => 'This is an example error message for an inline choices group'
             )
         );
 
