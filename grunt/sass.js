@@ -9,16 +9,5 @@ module.exports = {
                 ext: '.css'
             }
         ]
-    },
-    framework: {
-        files: [
-            {
-                expand: true,
-                cwd: 'doc_root/resources/thirdparty/travi-styles/scss',
-                src: ['**/*.scss'],
-                dest: 'doc_root/resources/thirdparty/travi-styles/css/',
-                ext: '.css'
-            }
-        ]
     }
 };

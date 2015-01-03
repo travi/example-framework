@@ -10,5 +10,5 @@ dist:
       cwd: "doc_root/resources/thirdparty"
       src:
         - "**/*.css"
-        - "!travi-styles/icons/**/*.css"
+        - "!travi-styles/**/*.css"
       dest: "doc_root/resources/min/thirdparty"

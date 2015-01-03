@@ -5,7 +5,6 @@ min:
 
 compile:
   - sass
-  - copy:framework
   - min
 
 build:

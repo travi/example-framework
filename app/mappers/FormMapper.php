@@ -6,6 +6,7 @@ use travi\framework\components\Forms\choices\SelectionBox;
 use travi\framework\components\Forms\FieldSet;
 use travi\framework\components\Forms\Form;
 use travi\framework\components\Forms\inputs\DateInput;
+use travi\framework\components\Forms\inputs\EmailInput;
 use travi\framework\components\Forms\inputs\FileInput;
 use travi\framework\components\Forms\inputs\NumberInput;
 use travi\framework\components\Forms\inputs\OpenIdInput;
@@ -66,6 +67,13 @@ class FormMapper
             new PasswordInput(
                 array(
                     'label' => 'Password Input'
+                )
+            )
+        );
+        $inputs->addFormElement(
+            new EmailInput(
+                array(
+                    'label' => 'Email Input'
                 )
             )
         );

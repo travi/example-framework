@@ -20,6 +20,7 @@ thirdparty:
         - "**/*.js"
         - "!**/bower_components/**/*.js"
         - "!**/node_modules/**/*.js"
+        - "!**/travi-styles/**/*.js"
       dest: "doc_root/resources/min/thirdparty"
 framework:
   options:
