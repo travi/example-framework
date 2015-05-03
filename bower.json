@@ -2,7 +2,8 @@
   "name": "travi-framework-sample",
   "dependencies": {
     "travi-framework": "master",
-    "travi-core": "master"
+    "travi-core": "master",
+    "travi-styles": "master"
   },
   "devDependencies": {
     "travi-test-utils": "latest"
